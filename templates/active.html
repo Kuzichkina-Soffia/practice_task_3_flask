@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+active user
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="alert alert-info">
+        <a href="/rootpage/{{ user.id }}/info" class="btn btn-success">Подробная информация</a>
+        <a href="/rootpage/{{ user.id }}/delete" class="btn btn-danger">Удалить</a>
+    </div>
+</div>
+{% endblock %}

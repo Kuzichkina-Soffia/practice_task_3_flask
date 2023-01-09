@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+User №{{ user.id }}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Подбробная инфомация о пользователе №{{ user.id }}</h1>
+    <div class="alert alert-info">
+        <h4>Пользователь №{{ user.id }} ({{ user.date.date() }})</h4>
+        <p>Ник: {{ user.name }}</p>
+        <p>Имя: {{ user.real }}</p>
+        <p>Пароль: {{ user.password }}</p>
+    </div>
+</div>
+{% endblock %}
